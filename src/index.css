@@ -2,61 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Chennai Bus Tracker Design System - Modern transport app with local touches */
+/* LYNQ Design System - Premium Smart Transport Experience */
 
 @layer base {
   :root {
-    /* Chennai-inspired color palette */
+    /* LYNQ Premium Color Palette */
     --background: 0 0% 100%;
-    --foreground: 220 20% 15%;
+    --foreground: 215 25% 10%;
     
-    /* Primary - Chennai transport blue */
-    --primary: 217 91% 60%;
+    /* Primary - Electric Purple */
+    --primary: 270 95% 65%;
     --primary-foreground: 0 0% 100%;
     
-    /* Secondary - Subtle background tones */
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 20% 15%;
+    /* Secondary - Sophisticated neutrals */
+    --secondary: 240 10% 96%;
+    --secondary-foreground: 215 25% 10%;
     
-    /* Muted colors for less important text */
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 13% 46%;
+    /* Muted colors for hierarchy */
+    --muted: 240 10% 96%;
+    --muted-foreground: 215 15% 50%;
     
-    /* Accent for highlights */
-    --accent: 217 91% 60%;
+    /* Accent - Electric cyan */
+    --accent: 185 100% 55%;
     --accent-foreground: 0 0% 100%;
     
-    /* Status colors for bus tracking */
-    --success: 142 76% 36%; /* On-time green */
-    --warning: 38 92% 50%; /* Delay amber */
-    --destructive: 0 84% 60%; /* Issue red */
+    /* Status colors with premium feel */
+    --success: 145 80% 42%; /* Vibrant green */
+    --warning: 35 100% 58%; /* Premium gold */
+    --destructive: 355 90% 65%; /* Modern red */
     --destructive-foreground: 0 0% 100%;
     
-    /* UI elements */
+    /* UI elements with premium touch */
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card-foreground: 215 25% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
+    --popover-foreground: 215 25% 10%;
+    --border: 240 15% 88%;
+    --input: 240 15% 88%;
+    --ring: 270 95% 65%;
     
-    /* Chennai-specific transport colors */
-    --bus-on-time: 142 76% 36%;
-    --bus-delayed: 38 92% 50%;
-    --bus-early: 200 100% 40%;
-    --seat-available: 142 69% 58%;
-    --seat-occupied: 0 84% 60%;
-    --seat-selected: 217 91% 60%;
+    /* Transport status with modern appeal */
+    --bus-on-time: 145 80% 42%;
+    --bus-delayed: 35 100% 58%;
+    --bus-early: 210 100% 55%;
+    --seat-available: 145 75% 50%;
+    --seat-occupied: 355 85% 60%;
+    --seat-selected: 270 95% 65%;
     
-    /* Gradients for visual appeal */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 91% 70%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(142 76% 36%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 14% 98%) 100%);
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 95% 65%) 0%, hsl(300 85% 70%) 50%, hsl(185 100% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(270 95% 65%) 0%, hsl(245 100% 65%) 50%, hsl(185 100% 55%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(240 20% 98%) 50%, hsl(270 20% 97%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(270 95% 65%) 0%, hsl(300 90% 75%) 25%, hsl(320 95% 80%) 50%, hsl(185 100% 55%) 75%, hsl(210 100% 60%) 100%);
     
-    /* Shadows */
-    --shadow-card: 0 1px 3px 0 hsl(220 20% 15% / 0.1), 0 1px 2px 0 hsl(220 20% 15% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(220 20% 15% / 0.1), 0 4px 6px -2px hsl(220 20% 15% / 0.05);
+    /* Premium shadows with depth */
+    --shadow-card: 0 2px 8px 0 hsl(270 95% 65% / 0.08), 0 1px 3px 0 hsl(215 25% 10% / 0.06);
+    --shadow-lg: 0 20px 25px -5px hsl(270 95% 65% / 0.15), 0 10px 10px -5px hsl(215 25% 10% / 0.08);
+    --shadow-glow: 0 0 30px hsl(270 95% 65% / 0.3), 0 0 60px hsl(185 100% 55% / 0.2);
     
     /* Border radius */
     --radius: 0.75rem;
@@ -71,25 +73,30 @@
   }
 
   .dark {
-    --background: 220 20% 8%;
-    --foreground: 220 14% 96%;
-    --card: 220 20% 10%;
-    --card-foreground: 220 14% 96%;
-    --popover: 220 20% 10%;
-    --popover-foreground: 220 14% 96%;
-    --primary: 217 91% 70%;
-    --primary-foreground: 220 20% 8%;
-    --secondary: 220 20% 14%;
-    --secondary-foreground: 220 14% 96%;
-    --muted: 220 20% 14%;
-    --muted-foreground: 220 13% 65%;
-    --accent: 217 91% 70%;
-    --accent-foreground: 220 20% 8%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 220 14% 96%;
-    --border: 220 20% 14%;
-    --input: 220 20% 14%;
-    --ring: 217 91% 70%;
+    --background: 215 25% 6%;
+    --foreground: 240 10% 95%;
+    --card: 215 25% 8%;
+    --card-foreground: 240 10% 95%;
+    --popover: 215 25% 8%;
+    --popover-foreground: 240 10% 95%;
+    --primary: 270 95% 75%;
+    --primary-foreground: 215 25% 6%;
+    --secondary: 215 25% 12%;
+    --secondary-foreground: 240 10% 95%;
+    --muted: 215 25% 12%;
+    --muted-foreground: 240 10% 70%;
+    --accent: 185 100% 65%;
+    --accent-foreground: 215 25% 6%;
+    --destructive: 355 90% 70%;
+    --destructive-foreground: 240 10% 95%;
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 270 95% 75%;
+    
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 95% 75%) 0%, hsl(300 85% 80%) 50%, hsl(185 100% 65%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(270 95% 75%) 0%, hsl(245 100% 75%) 50%, hsl(185 100% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 8%) 0%, hsl(240 20% 10%) 50%, hsl(270 20% 12%) 100%);
   }
 }
 
@@ -111,49 +118,64 @@
 }
 
 @layer components {
-  /* Status indicators for bus tracking */
+  /* Premium status indicators */
   .status-on-time {
-    @apply bg-green-500 text-white;
+    @apply text-white;
     background-color: hsl(var(--bus-on-time));
+    box-shadow: 0 4px 12px hsl(var(--bus-on-time) / 0.3);
   }
   
   .status-delayed {
     @apply text-white;
     background-color: hsl(var(--bus-delayed));
+    box-shadow: 0 4px 12px hsl(var(--bus-delayed) / 0.3);
   }
   
   .status-early {
     @apply text-white;
     background-color: hsl(var(--bus-early));
+    box-shadow: 0 4px 12px hsl(var(--bus-early) / 0.3);
   }
   
-  /* Seat status indicators */
+  /* Premium seat indicators */
   .seat-available {
     background-color: hsl(var(--seat-available));
+    box-shadow: inset 0 1px 2px hsl(var(--seat-available) / 0.8);
   }
   
   .seat-occupied {
     background-color: hsl(var(--seat-occupied));
+    box-shadow: inset 0 1px 2px hsl(var(--seat-occupied) / 0.8);
   }
   
   .seat-selected {
     background-color: hsl(var(--seat-selected));
+    box-shadow: 0 0 20px hsl(var(--seat-selected) / 0.6), inset 0 1px 2px hsl(var(--seat-selected) / 0.8);
+    animation: pulse 2s infinite;
   }
   
-  /* Gradient backgrounds */
+  /* Premium gradient backgrounds */
   .gradient-primary {
     background: var(--gradient-primary);
+    box-shadow: 0 8px 32px hsl(270 95% 65% / 0.3);
   }
   
   .gradient-hero {
     background: var(--gradient-hero);
+    box-shadow: 0 8px 32px hsl(270 95% 65% / 0.3);
   }
   
   .gradient-card {
     background: var(--gradient-card);
+    backdrop-filter: blur(10px);
   }
   
-  /* Custom shadows */
+  .gradient-luxury {
+    background: var(--gradient-luxury);
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Premium shadows */
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
@@ -162,12 +184,27 @@
     box-shadow: var(--shadow-lg);
   }
   
-  /* Smooth transitions */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Enhanced transitions */
   .transition-smooth {
     transition: var(--transition-smooth);
   }
   
   .transition-bounce {
     transition: var(--transition-bounce);
+  }
+  
+  /* Premium effects */
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    background: hsl(var(--background) / 0.8);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--accent) / 0.3);
   }
 }
