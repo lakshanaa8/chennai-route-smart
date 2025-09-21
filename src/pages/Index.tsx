@@ -1,14 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import AuthPage from "@/components/auth/AuthPage";
+import BusTracker from "@/components/bus/BusTracker";
 
 const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState<{ name: string; phone: string } | null>(null);
+
+  const handleLogin = (userData: { name: string; phone: string }) => {
+    setUser(userData);
+    setIsAuthenticated(true);
+  };
+
+  if (!isAuthenticated) {
+    return <AuthPage onLogin={handleLogin} />;
+  }
+
+  return <BusTracker user={user} />;
 };
 
 export default Index;
